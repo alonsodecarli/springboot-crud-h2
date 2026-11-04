@@ -772,11 +772,11 @@ Se as tabelas não aparecerem, confira a URL efetiva, os logs de criação do es
 
 Para acessar o repositório do projeto, clique no link abaixo:
 
-* **Repositório do Projeto**: [GitHub - crud-h2](https://github.com/alonsodecarli-via/crud-h2)
+* **Repositório do Projeto**: [GitHub - crud-h2](https://github.com/alonsodecarli/springboot-crud-h2)
 
 * **Clone o Repositório** usando o comando git abaixo:
     ```bash
-    git clone https://github.com/alonsodecarli-via/crud-h2.git
+    git clone https://github.com/alonsodecarli/springboot-crud-h2
     ```
 
 ---
