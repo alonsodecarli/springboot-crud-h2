@@ -71,7 +71,7 @@ CRUD é um acrônimo que significa **Create, Read, Update e Delete**, que são a
 
     Segue o link para acessar o Spring Initializr com as configurações utilizadas nesse projeto já preenchidas:
 
-    * **Spring Initializr com as configurações já preenchidas**: [Spring Initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.5.4&packaging=jar&jvmVersion=21&groupId=br.com.casasbahia&artifactId=crud-h2&name=crud-h2&description=Aula%201%20-%20CRUD%20com%20Spring%20Boot%20usando%20o%20H2&packageName=br.com.casasbahia.crud-h2&dependencies=web,data-jpa,h2,lombok)
+    * **Spring Initializr com as configurações já preenchidas**: [Spring Initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=4.1.2&packaging=jar&configurationFileFormat=yaml&jvmVersion=25&groupId=br.com.casasbahia&artifactId=crud-h2&packageName=br.com.casasbahia.crud-h2&dependencies=web,data-jpa,h2,lombok)
 
 
 7. **Gerar o projeto**:
