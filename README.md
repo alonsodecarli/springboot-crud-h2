@@ -806,6 +806,4 @@ As obras abaixo fundamentam os conceitos, sem pressupor que seus exemplos reprod
 13. **SPRING.** *Spring Boot Reference: Structuring Your Code*. Orientações oficiais sobre pacote raiz e descoberta de componentes. [Documentação da linha 3.5](https://docs.spring.io/spring-boot/3.5/reference/using/structuring-your-code.html).
 14. **DEITEL, Paul; DEITEL, Harvey.** *Java: como programar*. Pearson. Leitura de apoio para sintaxe, classes, objetos, exceções e coleções; utilize os dados da edição disponível em sua instituição.
 
-**Sugestão de percurso:** retome Java com Deitel; compreenda o contêiner com Spilcă; conecte os recursos de aplicação com Walls; aprofunde persistência com Bauer, King e Gregory; e analise decisões de projeto com Bloch, Fowler, Martin e o GoF. Use Fielding e a RFC 9110 para distinguir arquitetura REST de semântica HTTP.
-
 Bom estudo! 🚀
