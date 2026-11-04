@@ -789,8 +789,6 @@ Para acessar o repositório do projeto, clique no link abaixo:
 
 ## Referências bibliográficas e documentação
 
-As obras abaixo fundamentam os conceitos, sem pressupor que seus exemplos reproduzam exatamente as versões desta aula. Livros de persistência mais antigos utilizam o namespace `javax.persistence`; no Spring Boot 3, observe a transição para `jakarta.persistence`. Documentações evoluem: consulte a versão correspondente ao projeto.
-
 1. **WALLS, Craig.** *Spring in Action*. 6. ed. Manning, 2022. Referência para Spring Boot, aplicações web, acesso a dados e integração dos componentes. [Página da editora](https://www.manning.com/books/spring-in-action-sixth-edition).
 2. **SPILCĂ, Laurențiu.** *Spring Start Here*. Manning, 2021. Leitura para contêiner, beans, contexto, injeção de dependência e fundamentos de aplicações web. [Página da editora](https://www.manning.com/books/spring-start-here).
 3. **BLOCH, Joshua.** *Effective Java*. 3. ed. Addison-Wesley, 2018. Apoio para construção de objetos, igualdade, contratos, interfaces e boas práticas da linguagem. [Página da editora](https://www.informit.com/store/effective-java-9780134686097).
