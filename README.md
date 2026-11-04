@@ -580,13 +580,13 @@ Spring MVC identifica a rota e o método HTTP e seleciona o método do controlad
 
 SOLID é um conjunto de princípios de projeto, e não um padrão implementado por anotações. A avaliação considera responsabilidades, contratos e motivos de mudança. [7]
 
-| Princípio | Leitura correta do princípio | Relação com o código desta aula |
-| --- | --- | --- |
-| SRP | Um módulo deve responder a um motivo coeso de mudança, ligado às necessidades de um ator | A separação entre HTTP, coordenação e persistência é uma aproximação inicial; apenas dividir arquivos não garante SRP |
-| OCP | Permitir determinadas extensões sem modificar o comportamento estável existente | Ainda não há um cenário de extensão demonstrado; adicionar métodos à mesma classe continua sendo modificá-la |
-| LSP | Implementações substitutas devem preservar os contratos e expectativas do tipo | Depender de uma interface permite substituição estrutural, mas não prova equivalência comportamental; isso exige contratos e verificação |
-| ISP | Clientes não devem ser obrigados a depender de operações que não utilizam | `JpaRepository` expõe uma interface ampla; interfaces menores podem ser discutidas quando existir necessidade concreta |
-| DIP | Políticas e detalhes devem depender de abstrações adequadas | O serviço depende do contrato do repositório, mas mantém dependência do ecossistema JPA; o controlador depende do serviço concreto |
+| Princípio | Conceito |
+| --- | --- |
+| SRP | Um módulo deve responder a um motivo coeso de mudança, ligado às necessidades de um ator |
+| OCP | Permitir determinadas extensões sem modificar o comportamento estável existente | 
+| LSP | Implementações substitutas devem preservar os contratos e expectativas do tipo | 
+| ISP | Clientes não devem ser obrigados a depender de operações que não utilizam | 
+| DIP | Políticas e detalhes devem depender de abstrações adequadas | 
 
 Não é necessário acrescentar interfaces e padrões indiscriminadamente nesta primeira aula. A evolução deve responder a problemas observados, mantendo o código compreensível.
 
