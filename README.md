@@ -536,7 +536,7 @@ Spring MVC identifica a rota e o método HTTP e seleciona o método do controlad
 
 **Semântica HTTP:** GET é seguro, isto é, não solicita mudança do estado de negócio. PUT e DELETE são idempotentes quanto ao efeito pretendido; repetir a operação não exige que a resposta seja idêntica. POST não é idempotente por definição. PUT representa criação ou substituição do estado no recurso alvo segundo HTTP; esta API restringe o uso à atualização de um registro existente e não implementa atualização parcial como PATCH. [12]
 
-**Escolhas da introdução:** a criação retorna 200 porque utiliza `ResponseEntity.ok`. Uma evolução pode adotar 201 e `Location`. A entidade é exposta diretamente no contrato HTTP; assim, mudanças na persistência podem repercutir nos consumidores. O controlador deve cuidar do transporte e delegar operações ao serviço: essa separação favorece SRP. Como depende de `ProdutoService` concreto, não se deve apresentar essa relação como prova de aplicação estrita de DIP. **Leitura:** Walls [1] e Fielding [8].
+**Escolhas da introdução:** a criação retorna 200 porque utiliza `ResponseEntity.ok`. Uma evolução pode adotar 201. 
 
 
 
