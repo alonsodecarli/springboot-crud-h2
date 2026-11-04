@@ -29,11 +29,10 @@ CRUD é um acrônimo que significa **Create, Read, Update e Delete**, que são a
 
    * **Project**: Maven
    * **Language**: Java
-   * **Spring Boot**: 3.5.4 (ou a versão mais recente)
+   * **Spring Boot**: 4.1.2 (ou a versão mais recente)
 
    **Maven e construção do projeto.** O Maven lê o `pom.xml`, resolve bibliotecas e dependências transitivas e executa etapas como compilação, testes e empacotamento. Um *starter* reúne dependências para uma finalidade; o gerenciamento de versões do Spring Boot procura manter esse conjunto compatível. A JVM executa a aplicação; o JDK também inclui ferramentas de desenvolvimento, como o compilador.
 
-   **Coerência de versões.** O roteiro original indica Java 25, mas o link preenchido abaixo solicita Java 21 e Spring Boot 3.5.4. Preserve a configuração adotada na aula e confira o `pom.xml`, o SDK do projeto e o JDK usado pelo Maven. Não interprete “versão mais recente” como garantia de compatibilidade com todos os exemplos. A versão exata do Boot, do JDK e dos processadores de anotações deve ser verificada em conjunto na documentação correspondente. [1, 2]
 
 3. **Metadados**:
 
