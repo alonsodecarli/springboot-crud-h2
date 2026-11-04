@@ -341,9 +341,6 @@ Uma entidade é um objeto com identidade persistente, associado a uma tabela por
 
 `Long` permite que o ID seja inicialmente `null`; `IDENTITY` delega sua geração ao mecanismo de identidade do banco. Como `@Id` está no campo, o mapeamento utiliza acesso aos campos. `BigDecimal` representa valores decimais com precisão arbitrária, adequado para discutir dinheiro, mas escala, arredondamento e regras monetárias continuam sendo decisões explícitas. `Integer` admite ausência de valor e não impede quantidades negativas. O NCM é representado como texto; o exemplo não verifica sua validade fiscal.
 
-**O que as anotações não fazem:** `@Entity` não valida o preço, o nome ou a quantidade. `@Builder` facilita a montagem, mas não garante um objeto válido e não equivale integralmente à estrutura do Builder descrita pelo GoF. `@NoArgsConstructor` atende ao requisito de construção sem argumentos da entidade. `@Data` gera comportamento com base nos campos; igualdade, hash e `toString` merecem revisão em entidades, sobretudo quando surgirem associações e campos mutáveis. [3, 5, 6, 11]
-
-**Responsabilidade nesta versão:** `Produto` representa os dados persistidos e também será utilizado na entrada e na saída HTTP. Essa simplificação reduz os tipos necessários à introdução; DTOs e validação serão oportunidades para separar o contrato da API do modelo de persistência. **Leitura:** Bloch para objetos e igualdade; Bauer, King e Gregory para persistência [3, 6].
 
 ### 3. Repositório `ProdutoRepository`
 
@@ -384,7 +381,6 @@ O Spring Data cria um proxy que encaminha chamadas para a infraestrutura de repo
 
 `save` não significa sempre executar um INSERT: o Spring Data decide entre `persist` e `merge` conforme a identificação de uma entidade nova. SQL e sincronização com o banco dependem também do contexto de persistência e das transações. Utilize o objeto retornado por `save`, como faz o exemplo. [9]
 
-**Princípios e limites:** a interface permite ao serviço depender de um contrato, favorecendo DIP em relação à implementação concreta. Entretanto, `JpaRepository` ainda é um contrato do framework; esta aula não demonstra independência completa do domínio. Sua API ampla também não demonstra ISP apenas por ser uma interface. Repository, em Fowler, trata da mediação entre domínio e mapeamento de dados; o Spring Data oferece uma realização prática com características próprias. **Leitura:** Fowler [4] e documentação Spring Data [9].
 
 ### 4. Serviço `ProdutoService`
 
@@ -456,7 +452,6 @@ O serviço recebe `ProdutoRepository` pelo construtor gerado pelo Lombok. O Spri
 
 **Transações:** operações herdadas de repositório possuem configurações transacionais na infraestrutura Spring Data. Sem uma fronteira transacional no serviço, a combinação `existsById` seguida de escrita não forma, por si só, uma operação atômica. Outra requisição pode alterar o registro entre as chamadas; até uma transação exige discutir isolamento e concorrência para resolver isso corretamente.
 
-**Relação com SOLID:** SRP aparece na concentração da coordenação das operações no serviço; a dependência da interface do repositório favorece DIP. Injeção de dependência é um mecanismo de construção; DIP é uma orientação sobre dependências e não são sinônimos. O serviço ainda é simples, preparando a localização de futuras regras de negócio. **Leitura:** Fowler, Martin e Spilcă [2, 4, 7].
 
 ### 5. Controlador `ProdutoController`
 
